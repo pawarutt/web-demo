@@ -11,6 +11,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background: rgb(236, 253, 2);
+    background: linear-gradient(180deg, rgb(29, 18, 228) 0%, rgb(10, 116, 236) 34%, rgb(30, 15, 243) 100%);
     color: #ee0f1a;
 }
 h1{
