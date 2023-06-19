@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work1</title>
+    <link rel="shortcut icon" href="images/home.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    </div>
+    <div class="home1" id="home1">
+        <div class="cover-home1">
+            <h1>ข้อ 1 แสดงคําว่า สวัสดีชาวโลก ด้วยข้อความสีดํา แล้วเมื่อกดปุ่ม เปลี่ยนสี ให้เปลี่ยนเป็นสีแดง</h1>
+            <h2 id="chenge">สวัสดีชาวโลก</h2>
+            <div class="btn-home1">
+                <button onclick="chengeColor()">เปลี่ยนสี</button>
+            </div>
+        </div>
+    </div>
+    <div class="home2" id="home2">
+        <div class="cover-home2">
+            <h1>ข้อ 2 ให้แสดงวันที่และเวลาปัจจุบันในรูปแบบไทย</h1>
+            <button onclick="document.getElementById('Show').innerHTML = (toThaiDateString(date1));">แสดงเวลา</button>
+            <p id="Show"></p>
+
+        </div>
+    </div>
+    <div class="home3" id="home3">
+        <h2> ข้อ 3 ให้แสดงภาพแมว ซึ่งสามารถสลับท่าทางของแมวตามการกดปุ่มได้</h2>
+        <div class="cat">
+            <img src="images/Idle.png" alt="" id="move" width="250px" height="250px">
+            <div class="btn">
+                <button onclick="idle();">แมวยืน</button>
+                <button onclick="slide();">แมวสไลด์</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="home4" id="home4">
+        <h2 style="color: #000;">4. ให้สร้างปุ่มซ่อนหรือแสดงตารางได้
+        </h2>
+        <div class="btn-table">
+            <button onclick="showTable()">แสดงตาราง</button>
+            <button onclick="DeleteTable()">ซ่อนตาราง</button>
+        </div>
+        <div class="cover">
+            <div class="cover-table" id="show-table" style="display: none; background: #fff; padding: 10px;">
+               
+                <table border="1" >
+                    <h4 style="color: #000; text-align: center; margin-top:10px;">ตารางแสดงสินค้า</h4>
+                    <tr>
+                        <th>รายการที่ 1</th>
+                        <th>รายการที่ 2</th>
+                        <th>รายการที่ 3</th>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>64</td>
+                        <td>128</td>
+                        <td>256</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="home5" id="home5">
+        <div class="cover-home5">
+            <h2>5. ให้รับข้อมูลตัวเลข 3 ตัวจากผู้ใช้ผ่าน input box แล้วเมื่อกดปุ่ม Submit แสดงค่าเฉลี่ย ค่าสูงสุด และค่าตํ่าสุด
+                ออกมา</h2>
+            <label for="number">
+                <input type="text" id="number1" class="number" required>
+                <span></span>
+            </label>
+            <label for="number">
+                <input type="text" id="number2" class="number"  required>
+                <span></span>
+            </label>
+            <label for="number">
+                <input type="text" id="number3" class="number"  required>
+                <span></span>
+            </label>
+            <p id="sum1">ค่าเฉลี่ย : </p>
+            <p id="sum2">ค่าสูงสุด : </p>
+            <p id="sum3">ค่าต่ำสุด : </p>
+            <div class="btn-fornum">
+                <button onclick="Calculate()">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="jss.js"></script>
